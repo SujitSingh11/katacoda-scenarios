@@ -18,9 +18,9 @@
   },
   "environment": {
     "hideintro": true,
-    "uilayout": "terminal-terminal" 
+    "uilayout": "terminal-terminal-split" 
   },
   "backend": {
-    "imageid": "kubernetes-cluster"
+    "imageid": "ubuntu"
   }
 }
