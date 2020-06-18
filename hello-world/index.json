@@ -17,8 +17,11 @@
     }
   },
   "environment": {
+    "showide": true,
+    "idePort": 23000,
+
     "hideintro": true,
-    "uilayout": "terminal" 
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "ubuntu:2004"
