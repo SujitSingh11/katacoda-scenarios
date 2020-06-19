@@ -32,9 +32,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "node"
+    "imageid": "ubuntu"
   }
 }
