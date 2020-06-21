@@ -1,17 +1,19 @@
-A Katacoda scenario is a series of Markdown files, bash scripts and a JSON file to define how your scenario should be configured, the text for the scenario and any automation required.
+The Katacoda `terminal-terminal` UI Layout provides a full Terminal experience. 
 
-## Task
+# Index.json
 
-Clone our example repository that contains the set of documentation with the following command:
+Example:
 
-`git clone https://github.com/katacoda/scenario-examples.git katacoda-scenario-examples`{{execute}}
+<pre>
+"environment": {
+    "uilayout": "terminal-terminal"
+},
+</pre>
 
-Within the repository, you will see a set of examples of implementing various Katacoda functionality.
+# Helper Functionality
 
-The scenario you are currently reading is in the directory `ls -lha katacoda-scenario-examples/create-scenario-101`{{execute}}. The directory name is what defines the URL.
+`echo "Running a command on Host 1"`{{execute HOST1}}
 
-An example of the current step is `katacoda-scenario-examples/create-scenario-101/step1.md`{{open}}
+`echo "Running a command on Host 2"`{{execute HOST2}}
 
-All the steps are collected via a JSON file, for example, `katacoda-scenario-examples/create-scenario-101/index.json`{{open}}.
-
-The JSON file defines the scenario title, the description, steps order, the UI layout and environment. You can find more about the layouts within our scenarios at [katacoda.com/docs/scenarios/layouts](https://katacoda.com/docs/scenarios/layouts) and environments at [katacoda.com/docs/scenarios/environments](https://katacoda.com/docs/scenarios/environments).
+Other Terminal and Markdown functionality is available at https://katacoda.com/scenario-examples/scenarios/markdown-extensions
