@@ -7,3 +7,9 @@
 `apt install net-tools`{{execute HOST1}}
 
 `apt install docker.io -y`{{execute HOST1}}
+
+`systemmctl enable docker`{{execute HOST1}}
+
+`apt install curl`{{execute HOST1}}
+
+`systemmctl enable docker`{{execute HOST1}}
