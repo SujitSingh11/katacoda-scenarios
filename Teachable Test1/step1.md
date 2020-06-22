@@ -1,18 +1,5 @@
-The Katacoda `terminal-terminal` UI Layout provides a full Terminal experience. 
+# Setup your enviorment
 
-# Index.json
+## Check the IP adderss of both host
 
-Example:
-
-<pre>
-"environment": {
-    "uilayout": "terminal-terminal"
-},
-</pre>
-
-# Helper Functionality
-
-`echo "Running a command on Host 1"`{{execute HOST1}}
-
-
-Other Terminal and Markdown functionality is available at https://katacoda.com/scenario-examples/scenarios/markdown-extensions
+`ifconfig`{{execute HOST1 HOST2}}
