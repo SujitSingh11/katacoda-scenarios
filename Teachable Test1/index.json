@@ -6,7 +6,8 @@
     "steps": [
       {
         "title": "Step 1 Testing",
-        "text": "step1.md"
+        "text": "step1.md",
+        "courseData": "background.sh"
       }
     ],
     "assets": {
