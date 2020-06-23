@@ -7,7 +7,7 @@
       {
         "title": "Testing",
         "text": "step1.md",
-        "courseData": "background.sh"
+        "courseData": "assets/background.sh"
       }
     ]
   },
