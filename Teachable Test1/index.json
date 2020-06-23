@@ -22,7 +22,7 @@
   },
   "environment": {
     "hideintro": true,
-    "uilayout": "terminal"
+    "uilayout": "terminal-terminal-terminal"
   },
   "backend": {
     "imageid": "kubernetes-cluster"
