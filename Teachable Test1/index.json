@@ -5,11 +5,19 @@
   "details": {
     "steps": [
       {
-        "title": "",
-        "text": "step1.md",
-        "courseData": "assets/k8s.sh"
+        "title": "Step 1 Testing",
+        "text": "step1.md"
       }
-    ]
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "k8s.sh",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        }
+      ]
+    }
   },
   "environment": {
     "hideintro": true,

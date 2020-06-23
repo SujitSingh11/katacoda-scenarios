@@ -2,16 +2,16 @@
 
 ### Check the IP adderss of both host
 
-`apt-get update`{{execute HOST1}}
+`apt-get update`{{execute}}
 
-`apt install net-tools`{{execute HOST1}}
+`apt install net-tools`{{execute}}
 
-`ifconfig`{{execute HOST1}}
+`ifconfig`{{execute}}
 
-`apt install docker.io -y`{{execute HOST1}}
+`apt install docker.io -y`{{execute}}
 
-`systemctl enable docker`{{execute HOST1}}
+`systemctl enable docker`{{execute}}
 
-`apt install curl`{{execute HOST1}}
+`apt install curl`{{execute}}
 
-`systemctl enable docker`{{execute HOST1}}
+`cat /usr/local/bin/k8s.sh`{{execute}}
