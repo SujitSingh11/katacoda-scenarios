@@ -5,8 +5,9 @@
   "details": {
     "steps": [
       {
-        "title": "",
-        "text": "step1.md"
+        "title": "Testing",
+        "text": "step1.md",
+        "courseData": "background.sh"
       }
     ]
   },
