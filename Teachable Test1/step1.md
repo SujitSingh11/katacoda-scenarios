@@ -16,3 +16,7 @@ kubectl apply -f webapp-service.yaml
 kubectl apply -f malicious.yaml
 
 ```{{execute}}
+
+# Helper Functionality
+
+Link https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com

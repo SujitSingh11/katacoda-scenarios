@@ -5,8 +5,7 @@ metadata:
 spec:
   type: NodePort
   externalIPs:
-    - 172.17.0.35
-    - 172.17.0.37
+    - 172.17.0.20
   ports:
     - port: 80
       protocol: TCP
