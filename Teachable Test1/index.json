@@ -6,15 +6,34 @@
     "steps": [
       {
         "title": "Step 1 Testing",
-        "text": "step1.md",
-        "courseData": "background.sh"
+        "text": "step1.md"
       }
     ],
     "assets": {
       "host01": [
         {
           "file": "k8s.sh",
-          "target": "/usr/local/bin/",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "api.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "api-service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp-service.yaml",
+          "target": "/root",
           "chmod": "+x"
         }
       ]
