@@ -2,16 +2,14 @@
 
 ### Check the IP adderss of both host
 
-`apt-get update`{{execute}}
+`sudo cp /etc/kubernetes/admin.conf $HOME/`{{execute}}
 
-`apt install net-tools`{{execute}}
+`sudo chown $(id -u):$(id -g) $HOME/admin.conf`{{execute}}
 
-`ifconfig`{{execute}}
+`export KUBECONFIG=$HOME/admin.conf`{{execute}}
 
-`apt install docker.io -y`{{execute}}
+`kubectl apply -f /opt/weave-kube`{{execute}}
 
-`systemctl enable docker`{{execute}}
+`kubectl get pod -n kube-system`{{execute}}
 
-`apt install curl`{{execute}}
-
-`cat /usr/local/bin/k8s.sh`{{execute}}
+`kubeadm token list`{{execute}}
