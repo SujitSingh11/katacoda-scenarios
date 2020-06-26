@@ -30,6 +30,6 @@
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "kubernetes-cluster"
   }
 }

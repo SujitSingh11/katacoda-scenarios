@@ -3,7 +3,6 @@
 ### Check the IP adderss of both host
 
 ```
-kubeadm init --apiserver-advertise-address=172..0. --pod-network-cidr=10.244.0.0/16
 sudo cp /etc/kubernetes/admin.conf $HOME/
 sudo chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
