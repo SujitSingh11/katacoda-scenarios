@@ -1,11 +1,8 @@
 #!/bin/bash
-apt install net-tools
-apt-get update
-ifconfig
-apt install docker.io -y
-systemctl enable docker
-apt install curl
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add
-apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
-apt -y update
-apt install -y kubeadm kubectl kubelet kubernetes-cni
+kubeadm init --apiserver-advertise-address=<IP Address> --pod-network-cidr=10.244.0.0/16
+sudo cp /etc/kubernetes/admin.conf $HOME/
+sudo chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
+kubectl apply -f /opt/weave-kube
+kubectl get pod -n kube-system
+kubeadm token list
