@@ -13,7 +13,7 @@ metadata:
 spec:
   type: NodePort
   externalIPs:
-    - $ip
+    - [[HOST_IP]]
   ports:
     - port: 80
       protocol: TCP
@@ -23,12 +23,6 @@ spec:
 ```{{copy}}
 </pre>
 
-[[HOST_IP]]
-
-[[HOST_IP_ADDRESS]]
-
-[[HOST_ADDRESS]]
-[[HOST_INET]]
 
 ```
 sudo cp /etc/kubernetes/admin.conf $HOME/
