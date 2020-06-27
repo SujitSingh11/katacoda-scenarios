@@ -25,7 +25,7 @@ spec:
       targetPort: 80
   selector:
     app: webapp
->>
+EOF
 ```{{execute}}
 
 
