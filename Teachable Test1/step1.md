@@ -1,7 +1,5 @@
 # Setup your enviorment
 
-### Check the IP adderss of both host
-
 `bash k8s.sh`{{execute HOST1}}
 
 Click on this 
@@ -35,13 +33,15 @@ export KUBECONFIG=$HOME/admin.conf
 kubectl apply -f /opt/weave-kube
 kubectl get pod -n kube-system
 kubeadm token list
+```{{execute interrupt}}
+
+```
 kubectl apply -f api.yaml
 kubectl apply -f api-service.yaml
 kubectl apply -f webapp.yaml
 kubectl apply -f webapp-service.yaml
-kubectl apply -f malicious.yaml
-
-```{{execute interrupt}}
+kubectl apply -f m.yaml
+```{{execute }}
 
 # Helper Functionality
 
