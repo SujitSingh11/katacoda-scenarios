@@ -4,6 +4,8 @@
 
 `bash k8s.sh`{{execute HOST1}}
 
+Click on this 
+
 ```
 apiVersion: v1
 kind: Service
@@ -20,7 +22,8 @@ spec:
       targetPort: 80
   selector:
     app: webapp
-```{{copy}}
+
+```{{execute}}
 
 
 ```
