@@ -1,8 +1,12 @@
 # Setup your enviorment
 
-`bash k8s.sh`{{execute HOST1}}
+`kubeadm init --apiserver-advertise-address=[[HOST_IP]] --pod-network-cidr=10.244.0.0/16`{{execute HOST1}}
 
-Click on this 
+#### Copy the kubeadm Join code and paste it in HOST 2
+
+`kubectl get nodes`{{execute HOST1}}
+
+### Run this after you completed the above step
 
 ```
 apiVersion: v1
@@ -24,8 +28,6 @@ spec:
 ```{{execute}}
 
 
-
-
 ```
 sudo cp /etc/kubernetes/admin.conf $HOME/
 sudo chown $(id -u):$(id -g) $HOME/admin.conf
@@ -42,6 +44,8 @@ kubectl apply -f webapp.yaml
 kubectl apply -f webapp-service.yaml
 kubectl apply -f m.yaml
 ```{{execute }}
+
+`kubectl get pods`{{execute HOST1}}
 
 # Helper Functionality
 
