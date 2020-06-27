@@ -9,6 +9,7 @@
 ### Run this after you completed the above step
 
 ```
+cat> web-service.yaml <<EOF
 apiVersion: v1
 kind: Service
 metadata:
@@ -24,7 +25,7 @@ spec:
       targetPort: 80
   selector:
     app: webapp
-
+EOF>>
 ```{{execute}}
 
 
