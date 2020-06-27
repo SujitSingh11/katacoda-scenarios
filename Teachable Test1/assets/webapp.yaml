@@ -26,4 +26,4 @@ spec:
             - name: API_URL
               value: "http://api"
           ports:
-            - containerPort: 8080
+            - containerPort: 80
