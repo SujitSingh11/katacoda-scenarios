@@ -22,6 +22,14 @@ spec:
     app: webapp
 ```{{copy}}
 </pre>
+
+[[HOST_IP]]
+
+[[HOST_IP_ADDRESS]]
+
+[[HOST_ADDRESS]]
+[[HOST_INET]]
+
 ```
 sudo cp /etc/kubernetes/admin.conf $HOME/
 sudo chown $(id -u):$(id -g) $HOME/admin.conf
