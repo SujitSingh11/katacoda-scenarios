@@ -24,6 +24,8 @@ spec:
     app: webapp
 
 ```{{execute}}
+{{execute interrupt}}
+
 
 
 ```
