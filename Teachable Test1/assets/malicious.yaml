@@ -13,7 +13,7 @@ spec:
         - name: hostsvolume
           mountPath: /attacker
       ports:
-        - containerPort: 80
+        - containerPort: 8080
       securityContext:
         privileged: true
   volumes:
