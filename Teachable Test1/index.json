@@ -6,8 +6,7 @@
     "steps": [
       {
         "title": "Step 1 Testing",
-        "text": "step1.md",
-        "code": "k8s.sh"
+        "text": "step1.md"
       }
     ],
     "assets": {
