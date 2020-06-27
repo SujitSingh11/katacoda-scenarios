@@ -23,8 +23,8 @@ spec:
   selector:
     app: webapp
 
-```{{execute}}
-{{execute interrupt}}
+```{{execute}}{{execute interrupt}}
+
 
 
 
