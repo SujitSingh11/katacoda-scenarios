@@ -51,5 +51,5 @@ EOF
 
 # Helper Functionality
 
-Link https://[[HOST1_SUBDOMAIN]]-80-[[KATACODA_HOST1]].environments.katacoda.com
-Link https://[[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST2]].environments.katacoda.com
+Link https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+Link https://[[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
