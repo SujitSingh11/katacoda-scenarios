@@ -18,7 +18,7 @@ kubeadm token list
 ### Run this after you completed the above step
 
 ```
-cat> web-service.yaml<<EOF
+cat> webapp-service.yaml<<EOF
 apiVersion: v1
 kind: Service
 metadata:
