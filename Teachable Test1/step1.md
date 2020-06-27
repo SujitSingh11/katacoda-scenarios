@@ -1,6 +1,9 @@
 # Setup your enviorment
 
 ### Check the IP adderss of both host
+
+`bash k8s.sh`{{execute HOST1}}
+
 <pre>
 ```
 apiVersion: v1
