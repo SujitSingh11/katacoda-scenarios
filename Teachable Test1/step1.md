@@ -2,6 +2,15 @@
 
 `kubeadm init --apiserver-advertise-address=[[HOST_IP]] --pod-network-cidr=10.244.0.0/16`{{execute HOST1}}
 
+```
+sudo cp /etc/kubernetes/admin.conf $HOME/
+sudo chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
+kubectl apply -f /opt/weave-kube
+kubectl get pod -n kube-system
+kubeadm token list
+```{{execute}}
+
 #### Copy the kubeadm Join code and paste it in HOST 2
 
 `kubectl get nodes`{{execute HOST1}}
@@ -27,16 +36,6 @@ spec:
     app: webapp
 EOF
 ```{{execute}}
-
-
-```
-sudo cp /etc/kubernetes/admin.conf $HOME/
-sudo chown $(id -u):$(id -g) $HOME/admin.conf
-export KUBECONFIG=$HOME/admin.conf
-kubectl apply -f /opt/weave-kube
-kubectl get pod -n kube-system
-kubeadm token list
-```{{execute interrupt}}
 
 ```
 kubectl apply -f api.yaml
