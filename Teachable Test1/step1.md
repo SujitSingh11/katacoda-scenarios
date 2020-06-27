@@ -27,7 +27,6 @@ spec:
   type: NodePort
   externalIPs:
     - [[HOST_IP]]
-    - [[HOST2_IP]]
   ports:
     - port: 80
       protocol: TCP
@@ -42,7 +41,7 @@ kubectl apply -f api.yaml
 kubectl apply -f api-service.yaml
 kubectl apply -f webapp.yaml
 kubectl apply -f webapp-service.yaml
-kubectl apply -f m.yaml
+kubectl apply -f malicious.yaml
 ```{{execute }}
 
 `kubectl get pods`{{execute HOST1}}

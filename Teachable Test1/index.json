@@ -35,6 +35,11 @@
           "file": "webapp-service.yaml",
           "target": "/root",
           "chmod": "+x"
+        },
+        {
+          "file": "malicious.yaml",
+          "target": "/root",
+          "chmod": "+x"
         }
       ]
     }
