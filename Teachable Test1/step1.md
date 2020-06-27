@@ -4,7 +4,6 @@
 
 `bash k8s.sh`{{execute HOST1}}
 
-<pre>
 ```
 apiVersion: v1
 kind: Service
@@ -21,7 +20,6 @@ spec:
   selector:
     app: webapp
 ```{{copy}}
-</pre>
 
 
 ```
