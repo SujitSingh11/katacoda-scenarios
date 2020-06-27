@@ -9,7 +9,7 @@ export KUBECONFIG=$HOME/admin.conf
 kubectl apply -f /opt/weave-kube
 kubectl get pod -n kube-system
 kubeadm token list
-```{{execute}}
+```{{execute HOST1}}
 
 #### Copy the kubeadm Join code and paste it in HOST 2
 
@@ -35,7 +35,7 @@ spec:
   selector:
     app: webapp
 EOF
-```{{execute}}
+```{{execute HOST1}}
 
 `kubectl apply -f api.yaml`{{execute HOST1}}
 
@@ -51,4 +51,5 @@ EOF
 
 # Helper Functionality
 
-Link https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+Link https://[[HOST1_SUBDOMAIN]]-80-[[KATACODA_HOST1]].environments.katacoda.com
+Link https://[[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST2]].environments.katacoda.com
