@@ -1,7 +1,24 @@
 # Setup your enviorment
 
 ### Check the IP adderss of both host
-
+<pre>
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-lb
+spec:
+  type: NodePort
+  externalIPs:
+    - $ip
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: webapp
+```{{copy}}
+</pre>
 ```
 sudo cp /etc/kubernetes/admin.conf $HOME/
 sudo chown $(id -u):$(id -g) $HOME/admin.conf
