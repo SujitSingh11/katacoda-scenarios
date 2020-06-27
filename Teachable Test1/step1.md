@@ -18,7 +18,7 @@ kubeadm token list
 ### Run this after you completed the above step
 
 ```
-cat> web-service.yaml <<EOF
+cat> web-service.yaml<<EOF
 apiVersion: v1
 kind: Service
 metadata:
@@ -27,6 +27,7 @@ spec:
   type: NodePort
   externalIPs:
     - [[HOST_IP]]
+    - [[HOST2_IP]]
   ports:
     - port: 80
       protocol: TCP
@@ -36,13 +37,15 @@ spec:
 EOF
 ```{{execute}}
 
-```
-kubectl apply -f api.yaml
-kubectl apply -f api-service.yaml
-kubectl apply -f webapp.yaml
-kubectl apply -f webapp-service.yaml
-kubectl apply -f malicious.yaml
-```{{execute }}
+`kubectl apply -f api.yaml`{{execute HOST1}}
+
+`kubectl apply -f api-service.yaml`{{execute HOST1}}
+
+`kubectl apply -f webapp.yaml`{{execute HOST1}}
+
+`kubectl apply -f webapp-service.yaml`{{execute HOST1}}
+
+`kubectl apply -f malicious.yaml`{{execute HOST1}}
 
 `kubectl get pods`{{execute HOST1}}
 
