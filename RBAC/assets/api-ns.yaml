@@ -2,11 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: api
+  namespace: rbac-ns
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: api
+        app: api
   minReadySeconds: 15
   strategy:
     type: RollingUpdate
@@ -18,9 +19,10 @@ spec:
       labels:
         app: api
     spec:
+      serviceAccountName: rbac-sa
       containers:
-        - name: api
-          image: hackingkubernetes/api:latest
+        - image: hackingkubernetes/api:latest
           imagePullPolicy: Always
+          name: api
           ports:
             - containerPort: 80
