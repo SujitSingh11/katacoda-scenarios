@@ -1,3 +1,4 @@
-# Join the network on the host
+# RBAC
 
-``{{execute HOST1}}
+## create a namespace
+`kubectl create namespace rbac-ns`{{execute HOST1}}

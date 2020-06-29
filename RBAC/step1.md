@@ -26,8 +26,9 @@ cp /etc/kubernetes/admin.conf $HOME/
 chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
 
-bash pods.sh
 ```{{execute HOST1}}
+## Configure our webapp
+`bash pods.sh`{{execute HOST1}}
 
 ## Check Running Pods
 `kubectl get pods`{{execute HOST1}}

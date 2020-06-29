@@ -5,8 +5,16 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 Testing",
+        "title": "Configuring",
         "text": "step1.md"
+      },
+      {
+        "title": "Join Cluster",
+        "text": "step2.md"
+      },
+      {
+        "title": "RBAC",
+        "text": "step3.md"
       }
     ],
     "assets": {
