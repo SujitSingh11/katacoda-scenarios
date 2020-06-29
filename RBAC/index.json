@@ -30,6 +30,11 @@
           "chmod": "+x"
         },
         {
+          "file": "service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
           "file": "pods.sh",
           "target": "/root",
           "chmod": "+x"
