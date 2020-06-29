@@ -20,7 +20,7 @@
     "assets": {
       "host01": [
         {
-          "file": "pods.sh",
+          "file": "pods2.sh",
           "target": "/root",
           "chmod": "+x"
         },
