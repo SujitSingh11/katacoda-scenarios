@@ -22,4 +22,4 @@
 `echo "Run in T3"`{{execute T3}}
 
 ## Run a python3 http server
-`python3 -m http.server`{{execute T3}}
+`python3 -m http.server`{{execute T2}}
