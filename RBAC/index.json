@@ -25,6 +25,11 @@
           "chmod": "+x"
         },
         {
+          "file": "role.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
           "file": "pods.sh",
           "target": "/root",
           "chmod": "+x"
