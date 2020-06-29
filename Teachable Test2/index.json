@@ -1,0 +1,62 @@
+{
+  "noindex": true,
+  "title": "Scenario with Terminal Terminal UI",
+  "description": "Katacoda Scenario Example2",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 Testing",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 Testing",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 Testing",
+        "text": "step3.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "pods.sh",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "api.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "api-service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp-service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "malicious.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal-terminal-split"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster"
+  }
+}
