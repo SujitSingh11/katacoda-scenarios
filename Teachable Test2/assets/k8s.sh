@@ -12,8 +12,8 @@ metadata:
 spec:
   type: NodePort
   externalIPs:
-    - [[HOST_IP]]
-    - [[HOST2_IP]]
+    - $id
+    - "[[HOST2_IP]]"
   ports:
     - port: 80
       protocol: TCP
