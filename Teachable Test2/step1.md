@@ -21,9 +21,6 @@ spec:
   selector:
     app: webapp
 EOF
-```{{execute HOST1}}
-
-```
 cp /etc/kubernetes/admin.conf $HOME/
 chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
