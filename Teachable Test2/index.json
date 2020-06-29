@@ -1,12 +1,13 @@
 {
   "noindex": true,
   "title": "Scenario with Terminal Terminal UI",
-  "description": "Katacoda Scenario Example",
+  "description": "Katacoda Scenario Example2",
   "details": {
     "steps": [
       {
         "title": "Step 1 Testing",
-        "text": "step1.md"
+        "text": "step1.md",
+        "code": "background.sh"
       }
     ],
     "assets": {

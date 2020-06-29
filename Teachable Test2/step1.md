@@ -1,6 +1,7 @@
 # Setup your enviorment
 ## Setup your env
 
+```
 cat> webapp-service.yaml<<EOF
 apiVersion: v1
 kind: Service
