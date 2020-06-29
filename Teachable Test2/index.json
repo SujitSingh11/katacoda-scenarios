@@ -11,15 +11,14 @@
       {
         "title": "Step 2 Testing",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3 Testing",
+        "text": "step3.md"
       }
     ],
     "assets": {
       "host01": [
-        {
-          "file": "k8s.sh",
-          "target": "/root",
-          "chmod": "+x"
-        },
         {
           "file": "pods.sh",
           "target": "/root",
