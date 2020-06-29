@@ -12,5 +12,3 @@ kubectl apply -f webapp.yaml
 kubectl apply -f webapp-service.yaml
 kubectl apply -f malicious.yaml
 
-echo "Join the cluster at with this"
-kubeadm token create --print-join-command
