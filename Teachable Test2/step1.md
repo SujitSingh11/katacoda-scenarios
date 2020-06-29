@@ -2,10 +2,6 @@
 ## Setup your env
 
 ```
-sudo cp /etc/kubernetes/admin.conf $HOME/
-sudo chown $(id -u):$(id -g) $HOME/admin.conf
-export KUBECONFIG=$HOME/admin.conf
-
 cat> webapp-service.yaml<<EOF
 apiVersion: v1
 kind: Service
@@ -25,7 +21,13 @@ spec:
 EOF
 ```{{execute HOST1}}
 
-`bash k8s.sh`{{execute HOST1}}
+```
+bash k8s.sh
+cp /etc/kubernetes/admin.conf $HOME/
+chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
+pods.sh
+```{{execute HOST1}}
 
 ## Check Running Pods
 `kubectl get pods`{{execute HOST1}}
