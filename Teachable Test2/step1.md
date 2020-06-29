@@ -2,6 +2,10 @@
 ## Setup your env
 
 ```
+sudo cp /etc/kubernetes/admin.conf $HOME/
+sudo chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
+
 cat> webapp-service.yaml<<EOF
 apiVersion: v1
 kind: Service

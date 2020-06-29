@@ -6,8 +6,7 @@
     "steps": [
       {
         "title": "Step 1 Testing",
-        "text": "step1.md",
-        "code": "background.sh"
+        "text": "step1.md"
       },
       {
         "title": "Step 2 Testing",
