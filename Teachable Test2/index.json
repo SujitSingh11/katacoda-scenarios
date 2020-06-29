@@ -7,6 +7,10 @@
       {
         "title": "Step 1 Testing",
         "text": "step1.md"
+      },
+      {
+        "title": "Step 1 Testing",
+        "text": "step1.md"
       }
     ],
     "assets": {
@@ -38,6 +42,13 @@
         },
         {
           "file": "malicious.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        }
+      ],
+      "host02": [
+        {
+          "file": "host2.sh",
           "target": "/root",
           "chmod": "+x"
         }

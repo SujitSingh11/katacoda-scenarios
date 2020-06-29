@@ -9,11 +9,13 @@ sudo chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
 kubectl apply -f /opt/weave-kube
 
-kubectl apply -f api.yaml
-kubectl apply -f api-service.yaml
-kubectl apply -f webapp.yaml
-kubectl apply -f webapp-service.yaml
-kubectl apply -f malicious.yaml
+join = kubeadm token create --print-join-command
+
+echo $join
+
+echo $join >> host2.sh
+
+sleep 5
 
 cat> webapp-service.yaml<<EOF
 apiVersion: v1
@@ -32,6 +34,13 @@ spec:
   selector:
     app: webapp
 EOF
+
+kubectl apply -f api.yaml
+kubectl apply -f api-service.yaml
+kubectl apply -f webapp.yaml
+kubectl apply -f webapp-service.yaml
+kubectl apply -f malicious.yaml
+
 
 
 
