@@ -2,6 +2,8 @@
 
 `kubeadm token create --print-join-command`{{execute HOST1}}
 
+## Check Running Pods
+`kubectl get pods`{{execute HOST1}}
 
 ## Helper Functionality
 

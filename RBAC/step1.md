@@ -30,5 +30,4 @@ export KUBECONFIG=$HOME/admin.conf
 ## Configure our webapp
 `bash pods.sh`{{execute HOST1}}
 
-## Check Running Pods
-`kubectl get pods`{{execute HOST1}}
+
