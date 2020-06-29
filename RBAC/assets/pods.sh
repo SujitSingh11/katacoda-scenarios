@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep 2
+
 kubectl apply -f /opt/weave-kube
 kubectl get pod -n kube-system
 kubeadm token list
