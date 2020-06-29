@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ip="$(ifconfig | grep -A 1 'ens3' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
-ip2="[[HOST2_IP]]"
+ip2=[[HOST2_IP]]
 
 echo "$ip2"
 #kubeadm init --apiserver-advertise-address=$id --pod-network-cidr=10.244.0.0/16
