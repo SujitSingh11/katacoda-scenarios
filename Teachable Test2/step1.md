@@ -1,7 +1,7 @@
 # Setup your enviorment
 ## Setup your env
 
-`bash launch.sh`{{execute HOST1}}
+`bash k8s.sh`{{execute HOST1}}
 
 ## Check Running Pods
 `kubectl get pods`{{execute HOST1}}
