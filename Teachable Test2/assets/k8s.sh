@@ -2,7 +2,7 @@
 
 ip="$(ifconfig | grep -A 1 'ens3' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
 
-kubeadm init --apiserver-advertise-address= `[[HOST_IP]]` --pod-network-cidr=10.244.0.0/16
+kubeadm init --apiserver-advertise-address=$id --pod-network-cidr=10.244.0.0/16
 
 sudo cp /etc/kubernetes/admin.conf $HOME/
 sudo chown $(id -u):$(id -g) $HOME/admin.conf
