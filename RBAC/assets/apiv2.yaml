@@ -1,8 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api
-  namespace: rbac-ns
+  name: rbac-test
 spec:
   replicas: 2
   selector:
@@ -19,10 +18,10 @@ spec:
       labels:
         app: api
     spec:
-      serviceAccountName: rbac-sa
+      serviceAccountName: rbac-clustersa
       containers:
         - image: hackingkubernetes/api:latest
           imagePullPolicy: Always
-          name: api
+          name: rbac-test
           ports:
             - containerPort: 80

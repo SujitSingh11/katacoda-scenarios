@@ -14,3 +14,12 @@
 
 ## Check role in namespace rbac-ns
 `kubectl get role --namespace rbac-ns`{{execute HOST1}}
+
+## copy kubectl
+`cp /usr/bin/kubectl .`{{execute HOST1}}
+
+## open a new Terminal by clicking the plus sign
+`echo "Run in T3"`{{execute T3}}
+
+## Run a python3 http server
+`python3 -m http.server`{{execute T3}}
