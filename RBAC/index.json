@@ -2,6 +2,7 @@
   "noindex": true,
   "title": "RBAC",
   "description": "RBAC",
+  "time": "2 hours",
   "details": {
     "steps": [
       {
@@ -90,11 +91,6 @@
         },
         {
           "file": "webapp-service.yaml",
-          "target": "/root",
-          "chmod": "+x"
-        },
-        {
-          "file": "malicious.yaml",
           "target": "/root",
           "chmod": "+x"
         }

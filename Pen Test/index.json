@@ -1,11 +1,12 @@
 {
   "noindex": true,
-  "title": "RBAC",
-  "description": "RBAC",
+  "title": "Penetration Testing",
+  "description": "Misconfiguring the cluster",
+  "time": "2 hours",
   "details": {
     "steps": [
       {
-        "title": "Configuring",
+        "title": "Configuring Cluster",
         "text": "step1.md"
       },
       {
@@ -13,21 +14,12 @@
         "text": "step2.md"
       },
       {
-        "title": "RBAC Role Binding",
+        "title": "Misconfiguring",
         "text": "step3.md"
-      },
-      {
-        "title": "RBAC Cluster Role Binding",
-        "text": "step4.md"
       }
     ],
     "assets": {
       "host01": [
-        {
-          "file": "k8s.sh",
-          "target": "/root",
-          "chmod": "+x"
-        },
         {
           "file": "role.yaml",
           "target": "/root",
@@ -90,11 +82,6 @@
         },
         {
           "file": "webapp-service.yaml",
-          "target": "/root",
-          "chmod": "+x"
-        },
-        {
-          "file": "malicious.yaml",
           "target": "/root",
           "chmod": "+x"
         }

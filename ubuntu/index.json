@@ -17,19 +17,13 @@
         "title": "Step 3",
         "text": "step3.md"
       }
-    ],
-    "intro": {
-      "text": "intro.md"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
+    ]
   },
   "environment": {
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "ubuntu",
+    "imageid": "docker",
     "port": "80"
   }
 }
