@@ -34,7 +34,7 @@
 
 ## Open shell in the pod
 
-`kubectl exec -it <Pod Name> sh --namespace rbac-ns`{{copy}}
+`kubectl exec -it <Pod Name> bin/sh`{{copy}}
 
 ## Download kubectl in the pod
 
