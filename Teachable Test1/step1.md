@@ -11,11 +11,15 @@ kubectl get pod -n kube-system
 kubeadm token list
 ```{{execute HOST1}}
 
-#### Copy the kubeadm Join code and paste it in HOST 2
+### Copy the kubeadm Join code and paste it in HOST 2
+
+`kubeadm token create --print-join-command`{{execute HOST1}}
+
+### Check if the node is added
 
 `kubectl get nodes`{{execute HOST1}}
 
-### Run this after you completed the above step
+### Add the IPs of both host in webapp-service.yaml
 
 ```
 cat> webapp-service.yaml<<EOF
@@ -37,6 +41,8 @@ spec:
 EOF
 ```{{execute HOST1}}
 
+### Run the pods
+
 `kubectl apply -f api.yaml`{{execute HOST1}}
 
 `kubectl apply -f api-service.yaml`{{execute HOST1}}
@@ -47,9 +53,15 @@ EOF
 
 `kubectl apply -f malicious.yaml`{{execute HOST1}}
 
+### Check if the pods are Running
+
 `kubectl get pods`{{execute HOST1}}
 
-# Helper Functionality
+### To Remove malicious Pod for now 
+
+`kubectl delete -f malicious.yaml`{{execute HOST1}}
+
+# Links to Webapp
 
 Link https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 Link https://[[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
