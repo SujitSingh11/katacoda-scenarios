@@ -1,7 +1,6 @@
 # Setup your enviorment
-## Setup your env
 
-```
+````
 kubeadm init --apiserver-advertise-address=[[HOST_IP]] --pod-network-cidr=10.244.0.0/16
 
 cat> webapp-service.yaml<<EOF
@@ -30,5 +29,4 @@ export KUBECONFIG=$HOME/admin.conf
 
 ## Configure our webapp
 `bash pods.sh`{{execute HOST1}}
-
-
+````
