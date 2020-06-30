@@ -1,11 +1,11 @@
 {
   "noindex": true,
-  "title": "Scenario with Terminal Terminal UI",
-  "description": "Katacoda Scenario Example",
+  "title": "Deploying the webapp",
+  "description": "Setting up cluster and deploying the webapp",
   "details": {
     "steps": [
       {
-        "title": "Step 1 Testing",
+        "title": "Deploying the webapp",
         "text": "step1.md"
       }
     ],
