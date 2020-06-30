@@ -21,7 +21,8 @@
     ]
   },
   "environment": {
-    "uilayout": "terminal-iframe"
+    "hideintro": true,
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "docker",

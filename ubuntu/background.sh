@@ -1,2 +1,2 @@
-sudo apt-get update
-sudo apt install npm -y
+apt-get update
+apt install npm -y
