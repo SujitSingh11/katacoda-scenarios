@@ -3,6 +3,6 @@
 
 ```
 apt-get update
-apt install nmap
+apt install -y nmap
 clear
 ```{{execute}}
