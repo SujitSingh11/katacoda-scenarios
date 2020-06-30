@@ -4,5 +4,6 @@
 ```
 apt-get update
 apt install -y nmap
-clear
 ```{{execute}}
+
+### Before continuing make sure you have completed the above scenirio
