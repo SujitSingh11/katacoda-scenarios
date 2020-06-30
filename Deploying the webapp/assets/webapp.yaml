@@ -27,3 +27,4 @@ spec:
               value: "http://api"
           ports:
             - containerPort: 80
+

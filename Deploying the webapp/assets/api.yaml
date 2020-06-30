@@ -24,3 +24,4 @@ spec:
           name: api
           ports:
             - containerPort: 80
+
