@@ -28,5 +28,5 @@ export KUBECONFIG=$HOME/admin.conf
 ```{{execute HOST1}}
 
 ## Configure our webapp
+
 `bash pods.sh`{{execute HOST1}}
-````
