@@ -25,11 +25,6 @@
     "assets": {
       "host01": [
         {
-          "file": "k8s.sh",
-          "target": "/root",
-          "chmod": "+x"
-        },
-        {
           "file": "role.yaml",
           "target": "/root",
           "chmod": "+x"
