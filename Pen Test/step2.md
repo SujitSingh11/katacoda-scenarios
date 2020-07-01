@@ -4,7 +4,7 @@
 
 `kubeadm token create --print-join-command`{{execute HOST1}}
 
-## Check Running Pods
+## Check Running Pods (Use this links in place of IP Address for nmap)
 
 `kubectl get pods`{{execute HOST1}}
 

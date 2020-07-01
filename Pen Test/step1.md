@@ -27,6 +27,10 @@ export KUBECONFIG=$HOME/admin.conf
 
 ```{{execute HOST1}}
 
+### Misconfig
+
+`kubectl create clusterrolebinding encdecservice --clusterrole cluster-admin --serviceaccount=default:default`{{execute HOST1}}
+
 ## Configure our webapp
 
 `bash pods.sh`{{execute HOST1}}
