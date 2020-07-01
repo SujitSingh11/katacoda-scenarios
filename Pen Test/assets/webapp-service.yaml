@@ -8,9 +8,9 @@ spec:
   - 192.168.1.102
   - 192.168.1.100
   ports:
-    - port: 80
+    - port: 8080
       protocol: TCP
-      targetPort: 80
+      targetPort: 8080
   selector:
     app: webapp
 

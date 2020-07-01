@@ -24,4 +24,4 @@ spec:
           imagePullPolicy: Always
           name: rbac-test
           ports:
-            - containerPort: 80
+            - containerPort: 8080
