@@ -6,7 +6,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-        app: api
+      app: api
   minReadySeconds: 15
   strategy:
     type: RollingUpdate
