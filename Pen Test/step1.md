@@ -11,7 +11,8 @@ metadata:
 spec:
   type: NodePort
   externalIPs:
-    - [[HOST_IP]]
+  - [[HOST_IP]]
+  - [[HOST2_IP]]
   ports:
     - port: 80
       protocol: TCP
@@ -26,6 +27,10 @@ export KUBECONFIG=$HOME/admin.conf
 
 ```{{execute HOST1}}
 
+## Configure our webapp
+
+`bash pods.sh`{{execute HOST1}}
+
 ### Misconfig
 
 `kubectl create clusterrolebinding encdecservice --clusterrole cluster-admin --serviceaccount=default:default`{{execute HOST1}}
@@ -34,6 +39,4 @@ export KUBECONFIG=$HOME/admin.conf
 
 `bash service.sh`{{execute HOST1}}
 
-## Configure our webapp
 
-`bash pods.sh`{{execute HOST1}}
