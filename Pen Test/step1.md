@@ -14,9 +14,9 @@ spec:
     - [[HOST_IP]]
     - [[HOST2_IP]]
   ports:
-    - port: 8080
+    - port: 80
       protocol: TCP
-      targetPort: 8080
+      targetPort: 80
   selector:
     app: webapp
 EOF
@@ -24,19 +24,11 @@ EOF
 cp /etc/kubernetes/admin.conf $HOME/
 chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
-
+kubectl apply -f /opt/weave-kube
 ```{{execute HOST1}}
-
-## Configure our webapp
-
-`bash pods.sh`{{execute HOST1}}
 
 ### Misconfig
 
 `kubectl create clusterrolebinding encdecservice --clusterrole cluster-admin --serviceaccount=default:default`{{execute HOST1}}
-
-## Define Services
-
-`bash service.sh`{{execute HOST1}}
 
 
