@@ -84,11 +84,6 @@
           "file": "webapp.yaml",
           "target": "/root",
           "chmod": "+x"
-        },
-        {
-          "file": "webapp-service.yaml",
-          "target": "/root",
-          "chmod": "+x"
         }
       ]
     }
