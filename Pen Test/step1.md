@@ -12,6 +12,7 @@ spec:
   type: NodePort
   externalIPs:
     - [[HOST_IP]]
+    - [[HOST2_IP]]
   ports:
     - port: 80
       protocol: TCP
@@ -23,7 +24,7 @@ EOF
 cp /etc/kubernetes/admin.conf $HOME/
 chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
-kubectl apply -f /opt/weave-kube
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```{{execute HOST1}}
 
 ### Misconfig
