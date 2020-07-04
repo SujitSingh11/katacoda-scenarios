@@ -25,4 +25,4 @@ spec:
           imagePullPolicy: Always
           name: api
           ports:
-            - containerPort: 8080
+            - containerPort: 80

@@ -14,9 +14,9 @@ spec:
     - [[HOST_IP]]
     - [[HOST2_IP]]
   ports:
-    - port: 80
+    - port: 8080
       protocol: TCP
-      targetPort: 80
+      targetPort: 8080
   selector:
     app: webapp
 EOF
