@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rbac-test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+        app: api
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      serviceAccountName: rbac-clustersa
+      containers:
+        - image: hackingkubernetes/api:latest
+          imagePullPolicy: Always
+          name: rbac-test
+          ports:
+            - containerPort: 80
