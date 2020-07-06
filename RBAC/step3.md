@@ -8,8 +8,6 @@ The command below will create a new namespace called "rbac-ns"
 Apply the service account running in the newly created namespace
 `kubectl apply -f service.yaml`{{execute HOST1}}
 
-## Verify namespace
-
 Check if the service account is created in the created namespace using the command below
 `kubectl get sa --namespace rbac-ns`{{execute HOST1}}
 
@@ -18,15 +16,13 @@ Check if the service account is created in the created namespace using the comma
 Create a role in the rbac-ns namespace
 `kubectl apply -f role.yaml`{{execute HOST1}}
 
-## Check role in namespace rbac-ns
-
 Check if the role has been create in the namespace
 `kubectl get role --namespace rbac-ns`{{execute HOST1}}
 
 ## Creating a role binding
-`kubectl apply -f rbac-rolebinding.yaml`{{execute HOST1}}
 
-## Check role in namespace rbac-ns
+Create a role binding to the service account
+`kubectl apply -f rbac-rolebinding.yaml`{{execute HOST1}}
 
 Below code will get the rolebindings in namespace rbac-ns
 `kubectl get rolebinding --namespace rbac-ns`{{execute HOST1}}
@@ -41,7 +37,7 @@ Copy the kubectl to the current working directory
 
 ## Open new terminal
 
-Now we need to open a http server in a new tab. You can open a new terminal by clicking on the plus sign or execute the below code to open one.
+Now we need to open a http server in a new tab. You can open a new terminal by clicking on the plus sign or execute the below code to open one
 `echo "Run in T2"`{{execute T3}}
 
 ## Run a python3 http server
@@ -57,7 +53,7 @@ NOTE THE POD NAME
 
 ## Open shell in the pod
 
-This will open a shell in the pod, make sure you replace the pod name in the below code
+Make sure to copy the above printed pod name rbac-test and replace the pod name below
 `kubectl exec -it <Pod Name> sh --namespace rbac-ns`{{copy}}
 
 ## Download kubectl in the pod
@@ -67,9 +63,12 @@ Download the kubectl from the Master working directory
 
 ## Change permission on the kubectl file
 
+Change the permission of the file
 `chmod +x kubectl`{{execute HOST1}}
 
 ## Get pods using kubectl
+
+Get the pods form inside the pod using the code below
 `./kubectl get pods`{{execute HOST1}}
 
 ## Get services using kubectl 
