@@ -1,7 +1,7 @@
 {
   "noindex": true,
   "title": "RBAC",
-  "description": "RBAC",
+  "description": "Here we will learn how to create different roles and role bindings",
   "time": "2 hours",
   "details": {
     "steps": [
