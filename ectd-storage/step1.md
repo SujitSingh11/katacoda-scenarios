@@ -1,5 +1,6 @@
 # Setup your enviorment
 
+As we did in previous scenerios we have to setup the cluster, run the below code to configure the cluster.
 ````
 kubeadm init --apiserver-advertise-address=[[HOST_IP]] --pod-network-cidr=10.244.0.0/16
 
@@ -29,4 +30,5 @@ export KUBECONFIG=$HOME/admin.conf
 
 ## Configure our webapp
 
+After the above code executed run this command to run our webapp and API server
 `bash pods.sh`{{execute HOST1}}
