@@ -1,7 +1,7 @@
 {
   "noindex": true,
-  "title": "RBAC",
-  "description": "RBAC",
+  "title": "ectd-storage",
+  "description": "Here we will learn about ectd-storage and how it can be misconfigured",
   "time": "2 hours",
   "details": {
     "steps": [

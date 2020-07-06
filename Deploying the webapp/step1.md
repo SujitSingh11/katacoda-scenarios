@@ -1,6 +1,8 @@
 # Setup your enviorment
 
-Create a Kubernetes cluster using this command 
+NOTE: This commands can be executed multiple times, If you face any errors just reset the scenerio by refresing the page
+
+## Create a Kubernetes cluster using this command 
 
 `kubeadm init --apiserver-advertise-address=[[HOST_IP]] --pod-network-cidr=10.244.0.0/16`{{execute HOST1}}
 
@@ -12,7 +14,7 @@ export KUBECONFIG=$HOME/admin.conf
 ```{{execute HOST1}}
 
 Now let's apply the flannel networking plugin using the command below
-`kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml`{{execute HOST1}}
+`kubectl apply -f kube-flannel.yml`{{execute HOST1}}
 
 Check the tokens using this command
 `kubeadm token list`{{execute HOST1}}
@@ -66,6 +68,9 @@ Execute the code below to check if the pods are all running, if this process tak
 ### To Remove malicious Pod for now 
 
 `kubectl delete -f malicious.yaml`{{execute HOST1}}
+
+Check if the Pod is deleted
+`kubectl get pods`{{execute HOST1}}
 
 # Links to Webapp
 
