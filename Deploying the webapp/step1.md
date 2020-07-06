@@ -60,6 +60,7 @@ EOF
 
 ### Check if the pods are Running
 
+Execute the code below to check if the pods are all running, if this process takes more that 4-5 min to start reset the scenerio.
 `kubectl get pods`{{execute HOST1}}
 
 ### To Remove malicious Pod for now 
