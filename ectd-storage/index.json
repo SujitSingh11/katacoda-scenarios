@@ -25,6 +25,11 @@
     "assets": {
       "host01": [
         {
+          "file": "etcd-v3.4.7-linux-amd64.tar.gz",
+          "target": "/root/etcd-demo",
+          "chmod": "+x"
+        },
+        {
           "file": "role.yaml",
           "target": "/root",
           "chmod": "+x"
