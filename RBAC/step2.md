@@ -4,7 +4,7 @@ Now let the HOST2 join the network, the below code will print out the join code 
 `kubeadm token create --print-join-command`{{execute HOST1}}
 
 Check if the node has joined the cluster
-`kubeadm get nodes`{{execute HOST1}}
+`kubectl get nodes`{{execute HOST1}}
 
 ## Check Running Pods
 
