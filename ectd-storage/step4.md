@@ -1,4 +1,5 @@
 ## etcd storage
 
-You don't have to download the etcd from we have already setup all the files just move to the etcd-demo directory
-`cd etcd-demo`{{execute HOST1}}
+Download the etcd version used in the video 
+`wget https://github.com/etcd-io/etcd/releases/download/v3.4.7/etcd-v3.4.7-linux-amd64.tar.gz`{{execute HOST1}}
+
