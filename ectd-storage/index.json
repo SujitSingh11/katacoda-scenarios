@@ -14,11 +14,11 @@
         "text": "step2.md"
       },
       {
-        "title": "RBAC Role Binding",
+        "title": "Createing Secrets",
         "text": "step3.md"
       },
       {
-        "title": "RBAC Cluster Role Binding",
+        "title": "Exploring etcd storage",
         "text": "step4.md"
       }
     ],
