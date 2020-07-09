@@ -47,3 +47,5 @@ To take a snapshot of the etcd database execute the following command
 
 To check if our admin password is saved in snapshot 
 `strings etcd.db | grep 'admin@123'`{{execute HOST1}}
+
+As we can see this is how we can explore the snapshot of a misconfigured etcd storage
