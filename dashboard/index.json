@@ -14,7 +14,7 @@
         "text": "step2.md"
       },
       {
-        "title": "RBAC Role Binding",
+        "title": "Dashboard Setup",
         "text": "step3.md"
       },
       {
@@ -26,6 +26,11 @@
       "host01": [
         {
           "file": "role.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "recommended.yaml",
           "target": "/root",
           "chmod": "+x"
         },
