@@ -14,6 +14,7 @@ metadata:
 spec:
   type: NodePort
   externalIPs:
+    - [[HOST_IP]]
     - [[HOST2_IP]]
   ports:
     - port: 443
