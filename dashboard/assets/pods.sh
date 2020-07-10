@@ -1,5 +1,6 @@
 #!/bin/bash
 
+kubectl apply -f kube-flannel.yml
 kubectl apply -f api.yaml
 kubectl apply -f api-service.yaml
 kubectl apply -f webapp.yaml

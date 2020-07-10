@@ -25,7 +25,6 @@ EOF
 cp /etc/kubernetes/admin.conf $HOME/
 chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
-kubectl apply -f kube-flannel.yml
 ```{{execute HOST1}}
 
 ## Join the network on the host
