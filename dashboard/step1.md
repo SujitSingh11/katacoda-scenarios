@@ -29,10 +29,3 @@ kubectl apply -f kube-flannel.yml
 
 ```{{execute HOST1}}
 
-## Configure our webapp
-
-After the above code is executed we will create all the pods that we had created in the first lab using this shell script below.
-
-`bash pods.sh`{{execute HOST1}}
-
-After all the pods are created go to the next step
