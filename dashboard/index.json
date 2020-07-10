@@ -16,10 +16,6 @@
       {
         "title": "Dashboard Setup",
         "text": "step3.md"
-      },
-      {
-        "title": "RBAC Cluster Role Binding",
-        "text": "step4.md"
       }
     ],
     "assets": {
