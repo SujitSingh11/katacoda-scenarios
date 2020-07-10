@@ -1,9 +1,9 @@
 ## Inside dashboard
 
 Now as shown in the video lets compormise the cluster from the dashboard
-1. First Navigate yourself to the api pod's exec shell as shown in video 
-2. Now lets add our malicious file into the cluster, press ADD sign button in the navbar
-3. In the create from input copy-paste this code
+
+1. Now lets add our malicious file into the cluster, press ADD sign button in the navbar
+2. In the create from input copy-paste this code
 ```
 apiVersion: v1
 kind: Pod
@@ -28,8 +28,7 @@ spec:
       hostPath:
         path: /
 ```{{copy}}
-4. Press Upload
-
+3. Press Upload
 
 ## Configure our webapp
 
