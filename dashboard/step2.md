@@ -45,6 +45,11 @@ After the above code executed run this command to run our webapp and API server
 Check if pods are created
 `kubectl get pods`{{execute HOST1}}
 
+## Create a Cluster role binding
+
+Currently we cannot see anything on the dashboard because we haven't created any Service account
+Lets do it right now by executing the below code
+`kubectl create clusterrolebinding dashboard-test --clusterrole cluster-admin --serviceaccount=kubernetes-dashboard:kubernetes-dashboard`{{execute HOST1}}
 
 ## Link to the dashboard
 
