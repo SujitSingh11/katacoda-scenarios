@@ -38,7 +38,7 @@
           "file": "dashboard.yaml",
           "target": "/root",
           "chmod": "+x"
-        },
+        }
       ]
     }
   },
