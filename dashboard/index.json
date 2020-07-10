@@ -35,6 +35,21 @@
           "chmod": "+x"
         },
         {
+          "file": "pods.sh",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp-service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
           "file": "api-service.yaml",
           "target": "/root",
           "chmod": "+x"
