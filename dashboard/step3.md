@@ -1,9 +1,8 @@
 ## Configure and Deploy Dashboard
 
-As the dashboard is quite large we have done the configuring for you just execute the below code to deploy the dashboard
-
+The below code will is a breakdown of the dashboard yaml file, we have configured this with the external IPs
+ 
 ```
-kubectl apply -f dashboard.yaml
 cat> dashboard-service.yaml<<EOF
 kind: Service
 apiVersion: v1
@@ -24,3 +23,9 @@ spec:
     k8s-app: kubernetes-dashboard
 EOF
 ```{{execute HOST1}}
+
+As the dashboard yaml file is quite large we have done the configuring for you just execute the below code to deploy the dashboard
+
+`kubectl apply -f dashboard.yaml`{{execute HOST1}}
+
+`kubectl apply -f dashboard-service.yaml`{{execute HOST1}}
