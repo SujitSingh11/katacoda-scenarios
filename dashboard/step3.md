@@ -1,7 +1,7 @@
 ## Configure and Deploy Dashboard
 
 The below code will is a breakdown of the dashboard yaml file, we have configured this with the external IPs
- 
+
 ```
 cat> dashboard-service.yaml<<EOF
 kind: Service
@@ -13,7 +13,7 @@ metadata:
   namespace: kubernetes-dashboard
 spec:
   type: NodePort
-  externalIps:
+  externalIPs:
     - [[HOST_IP]]
     - [[HOST2_IP]]
   ports:
