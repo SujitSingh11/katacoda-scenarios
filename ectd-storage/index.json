@@ -88,6 +88,11 @@
           "file": "webapp-service.yaml",
           "target": "/root",
           "chmod": "+x"
+        },
+        {
+          "file": "kube-flannel.yml",
+          "target": "/root",
+          "chmod": "+x"
         }
       ]
     }
