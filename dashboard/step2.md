@@ -1,16 +1,41 @@
-## Join the network on the host
+## Configure and Deploy Dashboard
 
-Now let the HOST2 join the network, the below code will print out the join code just copy paste the output of this command in HOST2
-`kubeadm token create --print-join-command`{{execute HOST1}}
+The below code will is a breakdown of the dashboard yaml file, we have configured this with the external IPs
 
-Check if the node has joined the cluster
-`kubectl get nodes`{{execute HOST1}}
+```
+cat> dashboard-service.yaml<<EOF
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    k8s-app: kubernetes-dashboard
+  name: kubernetes-dashboard
+  namespace: kubernetes-dashboard
+spec:
+  type: NodePort
+  externalIPs:
+    - [[HOST2_IP]]
+  ports:
+    - port: 443
+      targetPort: 8443
+  selector:
+    k8s-app: kubernetes-dashboard
+EOF
+```{{execute HOST1}}
 
-## Check Running Pods
+As the dashboard yaml file is quite large we have done the configuring for you just execute the below code to deploy the dashboard
+
+`kubectl apply -f dashboard.yaml`{{execute HOST1}}
+
+`kubectl apply -f dashboard-service.yaml`{{execute HOST1}}
+
+## Check Running Pods in kube system
 
 You can execute this code multiple times, just make sure all the pods are up and running.
 If it takes longer than 5 min just reset the scenerio
-`kubectl get pods`{{execute HOST1}}
 
-## Link to the webapp
+`kubectl get pod -n kube-system`{{execute HOST1}}
+
+## Link to the dashboard
+
 Link https://[[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
