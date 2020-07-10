@@ -40,27 +40,12 @@
           "chmod": "+x"
         },
         {
-          "file": "rbac-rolebinding.yaml",
-          "target": "/root",
-          "chmod": "+x"
-        },
-        {
           "file": "service.yaml",
           "target": "/root",
           "chmod": "+x"
         },
         {
           "file": "service2.yaml",
-          "target": "/root",
-          "chmod": "+x"
-        },
-        {
-          "file": "clusterrole.yaml",
-          "target": "/root",
-          "chmod": "+x"
-        },
-        {
-          "file": "clusterrole-binding.yaml",
           "target": "/root",
           "chmod": "+x"
         },
