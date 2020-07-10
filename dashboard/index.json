@@ -25,12 +25,17 @@
     "assets": {
       "host01": [
         {
+          "file": "dashboard-service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
           "file": "role.yaml",
           "target": "/root",
           "chmod": "+x"
         },
         {
-          "file": "recommended.yaml",
+          "file": "dashboard.yaml",
           "target": "/root",
           "chmod": "+x"
         },
