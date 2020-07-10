@@ -37,6 +37,15 @@ If it takes longer than 5 min just reset the scenerio
 
 `kubectl get pod -n kube-system`{{execute HOST1}}
 
+## Configure our webapp
+
+After the above code executed run this command to run our webapp and API server
+`bash pods.sh`{{execute HOST1}}
+
+Check if pods are created
+`kubectl get pods`{{execute HOST1}}
+
+
 ## Link to the dashboard
 
 Link https://[[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]

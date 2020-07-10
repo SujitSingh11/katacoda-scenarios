@@ -35,10 +35,3 @@ Now let the HOST2 join the network, the below code will print out the join code 
 Check if the node has joined the cluster
 `kubectl get nodes`{{execute HOST1}}
 
-## Configure our webapp
-
-After the above code executed run this command to run our webapp and API server
-`bash pods.sh`{{execute HOST1}}
-
-Check if pods are created
-`kubectl get pods`{{execute HOST1}}
