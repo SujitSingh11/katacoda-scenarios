@@ -4,7 +4,7 @@ Now as shown in the video lets compormise the cluster from the dashboard
 1. First Navigate yourself to the api pod's exec shell as shown in video 
 2. Now lets add our malicious file into the cluster, press ADD sign button in the navbar
 3. In the create from input copy-paste this code
-`
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -27,5 +27,14 @@ spec:
     - name: hostsvolume
       hostPath:
         path: /
-`{{copy}}
+```{{copy}}
 4. Press Upload
+
+
+## Configure our webapp
+
+After the above code executed run this command to run our webapp and API server
+`bash pods.sh`{{execute HOST1}}
+
+Check if pods are created
+`kubectl get pods`{{execute HOST1}}

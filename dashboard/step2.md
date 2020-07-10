@@ -37,14 +37,6 @@ If it takes longer than 5 min just reset the scenerio
 
 `kubectl get pod -n kube-system`{{execute HOST1}}
 
-## Configure our webapp
-
-After the above code executed run this command to run our webapp and API server
-`bash pods.sh`{{execute HOST1}}
-
-Check if pods are created
-`kubectl get pods`{{execute HOST1}}
-
 ## Create a Cluster role binding
 
 Currently we cannot see anything on the dashboard because we haven't created any Service account
