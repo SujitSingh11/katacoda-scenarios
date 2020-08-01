@@ -1,0 +1,58 @@
+{
+  "noindex": true,
+  "title": "Network Policies",
+  "description": "We will learn how to setup network policies",
+  "details": {
+    "steps": [
+      {
+        "title": "Deploying the webapp with calico",
+        "text": "step1.md"
+      },
+      {
+        "title": "Apply the network policies",
+        "text": "step2.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "api.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "network-policy.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "api-service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp-service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "calico.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal-terminal-split"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster"
+  }
+}
