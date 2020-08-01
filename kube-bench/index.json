@@ -20,6 +20,14 @@
       {
         "title": "Trivy",
         "text": "step4.md"
+      },
+      {
+        "title": "Kubeaudit",
+        "text": "step5.md"
+      },
+      {
+        "title": "kubesec",
+        "text": "step6.md"
       }
     ],
     "assets": {
@@ -31,6 +39,11 @@
         },
         {
           "file": "api.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "malicious.yaml",
           "target": "/root",
           "chmod": "+x"
         },
