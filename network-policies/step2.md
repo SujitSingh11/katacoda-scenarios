@@ -4,4 +4,9 @@ To secure our deployment we will apply this policie that will block access to th
 
 `kubectl apply -f network-policy.yaml`{{execute HOST1}}
 
+To check if deployed
+
+`kubectl get pods`{{execute HOST1}}
+
+
 Now our deployment is secure
