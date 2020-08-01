@@ -1,7 +1,7 @@
 {
   "noindex": true,
-  "title": "kube-bench",
-  "description": "Here we will learn about how to automatically identify misconfig in our cluster using kube-bench",
+  "title": "Automated Tools",
+  "description": "Here we will learn about how to automatically identify misconfig in our cluster",
   "time": "2 hours",
   "details": {
     "steps": [
@@ -12,6 +12,14 @@
       {
         "title": "Kube Bench",
         "text": "step2.md"
+      },
+      {
+        "title": "Kube Hunter",
+        "text": "step3.md"
+      },
+      {
+        "title": "Trivy",
+        "text": "step4.md"
       }
     ],
     "assets": {
