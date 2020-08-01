@@ -1,4 +1,3 @@
-# Setting up kube-bench
 
 ## Install kube-bench
 To install kube-bench run the code below
