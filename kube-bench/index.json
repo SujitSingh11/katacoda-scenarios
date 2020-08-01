@@ -1,0 +1,69 @@
+{
+  "noindex": true,
+  "title": "kube-bench",
+  "description": "Here we will learn about how to automatically identify misconfig in our cluster using kube-bench",
+  "time": "2 hours",
+  "details": {
+    "steps": [
+      {
+        "title": "Configuring",
+        "text": "step1.md"
+      },
+      {
+        "title": "Kube Bench",
+        "text": "step2.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "pods.sh",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "api.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "kube-apiserver.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "config.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "api-service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "webapp-service.yaml",
+          "target": "/root",
+          "chmod": "+x"
+        },
+        {
+          "file": "kube-flannel.yml",
+          "target": "/root",
+          "chmod": "+x"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal-terminal-split"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster"
+  }
+}
