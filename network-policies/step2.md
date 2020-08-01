@@ -8,5 +8,4 @@ To check if deployed
 
 `kubectl get pods`{{execute HOST1}}
 
-
 Now our deployment is secure
