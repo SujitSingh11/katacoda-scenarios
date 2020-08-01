@@ -13,10 +13,6 @@ sudo chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf
 ```{{execute HOST1}}
 
-Now let's apply the calico networking plugin using the command below, the calico yaml file is already setup with the necessary changes.
-
-`kubectl apply -f calico.yaml`{{execute HOST1}}
-
 Check the tokens using this command
 
 `kubeadm token list`{{execute HOST1}}
