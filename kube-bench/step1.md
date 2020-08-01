@@ -47,9 +47,6 @@ You can execute this code multiple times, just make sure all the pods are up and
 If it takes longer than 5 min just reset the scenerio
 `kubectl get pods`{{execute HOST1}}
 
-## Link to the webapp
-Link https://[[HOST2_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
-
 ## Add misconfiguration
 We have to reconfigure the misconfiguration we added in the previous videos, for that execute the below code
 
