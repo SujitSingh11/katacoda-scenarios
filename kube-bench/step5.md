@@ -1,6 +1,5 @@
-# kubeaudit
 
-## Download and Extract
+## Download and Extract kubeaudit
 First we need to install the kubeaudit using wget and then extract it, run the code to do the following
 ```
 wget https://github.com/Shopify/kubeaudit/releases/download/v0.7.0/kubeaudit_0.7.0_linux_amd64.tar.gz

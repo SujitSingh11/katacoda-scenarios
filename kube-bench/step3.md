@@ -1,4 +1,3 @@
-# kube-hunter
 
 ## Install and run kube-hunter
 This command will pull the docker image of kube-hunter and then scan the cluster for vulnerabilities
